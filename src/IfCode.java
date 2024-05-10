@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class IfCode {
 
@@ -17,5 +18,12 @@ public class IfCode {
 		else {
 			System.out.println("What are you?!");
 		}
+	
+		String or = JOptionPane.showInputDialog("Run Progam?");
+		Object yes = null;
+		if(or==yes) {
+			JOptionPane.showMessageDialog(null,"Running");
+		}
+		
 	}
 }
