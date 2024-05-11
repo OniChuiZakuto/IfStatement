@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class IfCode {
 
@@ -18,12 +19,21 @@ public class IfCode {
 		else {
 			System.out.println("What are you?!");
 		}
-	
-		String or = JOptionPane.showInputDialog("Run Progam?");
-		Object yes = null;
-		if(or==yes) {
-			JOptionPane.showMessageDialog(null,"Running");
-		}
 		
+		String M = JOptionPane.showInputDialog("Name");
+		switch (M) {
+			case "Mikoto": int m = 9;
+			if (m==9) {
+				System.out.println("Mikoto");
+				JOptionPane.showMessageDialog(null, "HELLO MIKOTO!");
+			} break;
+			case "Jansen": int j = 1;	
+			if (j==1) {
+				System.out.println("Jansen");
+				JOptionPane.showMessageDialog(null, "Hello senny!");
+			}
+			
+		}
+
 	}
 }
