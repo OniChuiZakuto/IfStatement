@@ -30,10 +30,19 @@ public class IfCode {
 				if (State==0 || State==1) {
 					int Age = Integer.parseInt(JOptionPane.showInputDialog("Age"));
 				if (Age<=18) {
-					JOptionPane.showMessageDialog("You are a Minor, Program will be terminated");
+					JOptionPane.showMessageDialog(null, "You are a Minor, Program will be terminated");
 				}
 				else {
-					
+					String[] Options = {"yes", "no"};
+					int E = JOptionPane.showOptionDialog(null, "Are you employed", null, 0, 1, null, Options, Options);
+						switch (E) {
+							case 0: String J = JOptionPane.showInputDialog("What is your job");
+							int P = Integer.parseInt(JOptionPane.showInputDialog("How much does " + J + "ing pay annually?"));
+							if (P>=900000) {JOptionPane.showMessageDialog(null, "Thank you for Inputs");}
+							else {JOptionPane.showMessageDialog(null, "Program Terminated");}
+							break;
+							case 1: JOptionPane.showMessageDialog(null, "Program Terminateed");
+						}
 				}
 				}
 				else{}
