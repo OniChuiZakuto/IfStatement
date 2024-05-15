@@ -41,7 +41,7 @@ public class IfCode {
 							if (P>=900000) {JOptionPane.showMessageDialog(null, "Thank you for Inputs");}
 							else {JOptionPane.showMessageDialog(null, "Program Terminated");}
 							break;
-							case 1: JOptionPane.showMessageDialog(null, "Program Terminateed");
+							case 1: JOptionPane.showMessageDialog(null, "Program Terminated");
 						}
 				}
 				}
